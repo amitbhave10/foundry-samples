@@ -12,7 +12,7 @@ policies:
     rai_policy_name: /subscriptions/<subscription-id>/resourceGroups/<resource-group>/providers/Microsoft.CognitiveServices/accounts/<account>/raiPolicies/<policy-name>
 ```
 
-The platform applies that policy to the agent at runtime. When you omit the `policies` block, the platform applies the default policy, `Microsoft.DefaultV2`. For a conceptual overview, see [Add a content safety guardrail to a hosted agent](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/add-hosted-agent-guardrails).
+The platform applies that policy to the agent at runtime. When you omit the `policies` block, the agent deploys without a content safety guardrail. When you include the `policies` block but omit `rai_policy_name`, the platform applies the default policy, `Microsoft.DefaultV2`. For a conceptual overview, see [Add a content safety guardrail to a hosted agent](https://learn.microsoft.com/en-us/azure/foundry/agents/how-to/add-hosted-agent-guardrails).
 
 ## Prerequisites
 
